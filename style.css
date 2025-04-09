@@ -195,14 +195,21 @@ main p {
   opacity: 0;
   padding: 0;
   visibility: hidden;
-  transition: max-height 0.5s ease-in-out, padding 0.3s ease-in-out, opacity 0.4s ease;
+  transition: 
+    max-height 0.5s ease-in-out,
+    padding 0.5s ease-in-out,
+    opacity 0.5s ease-in-out 0.2s; /* Delay fade-out slightly */
 }
 
 .dropdown-content.open {
-  max-height: 2000px; /* Enough for all content */
+  max-height: 2000px;
   padding: 10px 0;
   opacity: 1;
   visibility: visible;
+  transition: 
+    max-height 0.5s ease-in-out,
+    padding 0.5s ease-in-out,
+    opacity 0.4s ease-in-out; /* No delay on fade-in */
 }
 
 .dropdown-content ul {
