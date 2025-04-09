@@ -192,10 +192,10 @@
     text-align: center;
   }
   .profile-pic {
-    width: 80%;       /* Adjust width; this will make it responsive */
-    max-width: 300px; /* Ensure it doesn't get too large on larger screens */
+    width: 80%;       /* Adjust width; makes it responsive */
+    max-width: 300px; /* Ensure it doesn't get too big on mobile */
   }
   .intro-text {
-    padding-top: 10px; /* Some space between the image and text */
+    padding-top: 10px; /* Space between image and text */
   }
 }
