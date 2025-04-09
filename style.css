@@ -20,6 +20,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
+  overflow-x: hidden;
 }
 
 /* Header */
@@ -105,8 +106,8 @@ main p {
 
 /* Profile picture styling */
 .profile-pic {
-  width: 600px;
-  max-width: none;
+  width: 100%;
+  max-width: 600px;
   height: auto;
   border-radius: 0;
   display: block;
