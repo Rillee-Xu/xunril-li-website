@@ -7,11 +7,6 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    document.body.classList.add("fade-in");
-  });
-</script>
 <body>
   <!-- Header -->
   <header>
@@ -116,16 +111,27 @@
     </div>
   </footer>
 
-  <!-- Dropdown toggle script -->
-<script>
-  document.querySelectorAll('.dropdown-header').forEach(header => {
-    header.addEventListener('click', () => {
-      const content = header.nextElementSibling;
-      const sign = header.querySelector('.dropdown-sign');
-      content.classList.toggle('open');
-      sign.textContent = content.classList.contains('open') ? '–' : '+';
+  <!-- Scripts -->
+  <script>
+    // Dropdown toggle
+    document.querySelectorAll('.dropdown-header').forEach(header => {
+      header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        const sign = header.querySelector('.dropdown-sign');
+        content.classList.toggle('open');
+        sign.textContent = content.classList.contains('open') ? '–' : '+';
+      });
     });
-  });
-</script>
+
+    // Fade-in on page load
+    document.addEventListener("DOMContentLoaded", function () {
+      document.body.classList.add("fade-in");
+    });
+
+    // Scroll to top before unloading
+    window.onbeforeunload = () => {
+      window.scrollTo(0, 0);
+    };
+  </script>
 </body>
 </html>
