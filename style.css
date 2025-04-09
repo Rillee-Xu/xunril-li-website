@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-/* Force consistent vertical scrollbar to prevent layout shift */
+/* Force consistent vertical scrollbar */
 html {
   overflow-y: scroll;
 }
@@ -51,7 +51,7 @@ header nav ul li a {
   text-decoration: none;
   color: #555;
   padding: 10px;
-  position: relative; /* For underline effect */
+  position: relative;
 }
 
 header nav ul li a::after {
@@ -100,7 +100,7 @@ footer .social-icons a:hover {
   color: #000;
 }
 
-/* Main Content */
+/* Main */
 main {
   overflow-x: hidden;
 }
@@ -114,7 +114,7 @@ main p {
   margin-bottom: 15px;
 }
 
-/* Profile picture styling */
+/* Homepage: Profile Picture */
 .profile-pic {
   width: 100%;
   max-width: 600px;
@@ -124,7 +124,7 @@ main p {
   margin-bottom: 20px;
 }
 
-/* Homepage intro section */
+/* Homepage: Intro Layout */
 .intro {
   display: flex;
   align-items: center;
@@ -137,7 +137,7 @@ main p {
   font-size: 1.6rem;
 }
 
-/* CV Button Styling */
+/* CV Button */
 .cv-container {
   text-align: center;
   margin-top: 20px;
@@ -158,11 +158,12 @@ main p {
   background-color: #f2f2f2;
 }
 
-/* Research page spacing */
+/* Research Page Intro */
 .research-intro {
   margin-bottom: 40px;
 }
 
+/* Dropdown Styles */
 .dropdown {
   margin-bottom: 20px;
 }
@@ -187,19 +188,21 @@ main p {
   color: #555;
 }
 
-/* Smooth slide effect for dropdowns */
+/* Dropdown Content – animated */
 .dropdown-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease-in-out, padding 0.3s ease-in-out;
-  padding: 0 0;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+  opacity: 0;
+  padding: 0;
+  visibility: hidden;
+  transition: max-height 0.5s ease-in-out, padding 0.3s ease-in-out, opacity 0.4s ease;
 }
 
 .dropdown-content.open {
-  max-height: 1000px; /* Large enough to reveal all content */
+  max-height: 2000px; /* Enough for all content */
   padding: 10px 0;
+  opacity: 1;
+  visibility: visible;
 }
 
 .dropdown-content ul {
@@ -215,7 +218,7 @@ main p {
   margin-bottom: 0;
 }
 
-/* Responsive for mobile */
+/* Responsive for Mobile */
 @media (max-width: 600px) {
   .intro {
     flex-direction: column;
@@ -231,56 +234,4 @@ main p {
   .intro-text {
     padding-top: 10px;
   }
-}
-
-.dropdown {
-  margin-bottom: 20px;
-}
-
-.dropdown-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #aaa;
-  padding: 10px 0;
-  cursor: pointer;
-}
-
-.dropdown-title {
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-
-.dropdown-sign {
-  font-size: 1.5rem;
-  font-weight: normal;
-  color: #555;
-}
-
-/* Transition section */
-.dropdown-content {
-  max-height: 0;
-  overflow: hidden;
-  opacity: 0;
-  padding: 0;
-  transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.3s ease;
-}
-
-.dropdown-content.open {
-  max-height: 2000px; /* Large enough for all content */
-  opacity: 1;
-  padding: 10px 0;
-}
-
-.dropdown-content ul {
-  max-width: 100%;
-}
-
-.dropdown-content ul li {
-  margin-bottom: 20px;
-  word-break: break-word;
-}
-
-.dropdown-content ul li:last-child {
-  margin-bottom: 0;
 }
