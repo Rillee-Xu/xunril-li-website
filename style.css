@@ -166,6 +166,10 @@ main p {
   overflow-wrap: break-word;
 }
 
+.dropdown-content ul {
+  max-width: 100%;
+}
+
 /* Responsive for mobile */
 @media (max-width: 600px) {
   .intro {
