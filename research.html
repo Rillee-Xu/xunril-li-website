@@ -6,35 +6,6 @@
   <title>Xun Ril Li - Research</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <style>
-    .dropdown {
-      margin-bottom: 20px;
-    }
-    .dropdown-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 0;
-      border-bottom: 1px solid #ddd;
-      cursor: pointer;
-    }
-    .dropdown-title {
-      font-size: 1.2rem;
-      font-weight: bold;
-    }
-    .dropdown-sign {
-      font-size: 1.2rem;
-      font-weight: bold;
-    }
-    .dropdown-content {
-      display: none;
-      padding: 10px 0;
-    }
-    .research-content {
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
-  </style>
 </head>
 <body>
   <!-- Header -->
@@ -52,9 +23,9 @@
     </div>
   </header>
 
-  <!-- Main Content (direct .container on main) -->
+  <!-- Main Content -->
   <main class="container">
-    <article class="research-content">
+    <section class="research-content">
       <h2>Research &amp; Publications</h2>
       <p class="research-intro">
         This page features a selection of my academic work, including peer-reviewed journal articles, book chapters, works in progress, and conference presentations.
@@ -124,7 +95,7 @@
           </ul>
         </div>
       </div>
-    </article>
+    </section>
   </main>
 
   <!-- Footer -->
@@ -140,6 +111,7 @@
     </div>
   </footer>
 
+  <!-- Dropdown toggle script -->
   <script>
     document.querySelectorAll('.dropdown-header').forEach(header => {
       header.addEventListener('click', () => {
