@@ -224,3 +224,15 @@ main p {
   font-weight: normal;
   color: #555;
 }
+
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out, padding 0.3s ease-in-out;
+  padding: 0 0;
+}
+
+.dropdown-content.open {
+  max-height: 1000px; /* Large enough to fit all content */
+  padding: 10px 0;
+}
