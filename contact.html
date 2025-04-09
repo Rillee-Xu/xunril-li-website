@@ -7,11 +7,6 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    document.body.classList.add("fade-in");
-  });
-</script>
 <body>
   <!-- Header -->
   <header>
@@ -28,7 +23,7 @@
     </div>
   </header>
 
-  <!-- Main Content (aligned using container directly on <main>) -->
+  <!-- Main Content -->
   <main class="container">
     <section>
       <h2>Let's Connect</h2>
@@ -56,5 +51,18 @@
       </div>
     </div>
   </footer>
+
+  <!-- Page Effects -->
+  <script>
+    // Fade-in effect on page load
+    document.addEventListener("DOMContentLoaded", function () {
+      document.body.classList.add("fade-in");
+    });
+
+    // Smooth scroll to top before leaving the page
+    window.onbeforeunload = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
 </body>
 </html>
