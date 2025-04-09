@@ -192,24 +192,15 @@ main p {
 .dropdown-content {
   max-height: 0;
   overflow: hidden;
-  opacity: 0;
   padding: 0;
-  visibility: hidden;
   transition: 
     max-height 0.5s ease-in-out,
-    padding 0.5s ease-in-out,
-    opacity 0.5s ease-in-out 0.2s; /* Delay fade-out slightly */
+    padding 0.5s ease-in-out;
 }
 
 .dropdown-content.open {
-  max-height: 2000px;
+  max-height: 2000px; /* adjust as needed */
   padding: 10px 0;
-  opacity: 1;
-  visibility: visible;
-  transition: 
-    max-height 0.5s ease-in-out,
-    padding 0.5s ease-in-out,
-    opacity 0.4s ease-in-out; /* No delay on fade-in */
 }
 
 .dropdown-content ul {
