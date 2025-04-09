@@ -205,10 +205,9 @@ nav ul li a {
   text-decoration: none;
   color: #555;
   padding: 10px;
-  position: relative;
+  position: relative; /* Needed for the pseudo-element */
 }
 
-/* Underline pseudo-element */
 nav ul li a::after {
   content: '';
   position: absolute;
@@ -220,13 +219,10 @@ nav ul li a::after {
   transition: width 0.3s ease;
 }
 
-/* On hover, animate the underline to full width */
 nav ul li a:hover::after {
   width: 100%;
 }
 
-/* For the active tab, show the underline */
 nav ul li a.active::after {
   width: 100%;
-  /* Optionally, add a transition delay or style if desired */
 }
