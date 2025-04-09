@@ -182,3 +182,7 @@ main p {
 .container {
   outline: 2px dashed red; /* TEMP: helps you see exact size and alignment */
 }
+
+main {
+  overflow-x: hidden;
+}
