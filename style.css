@@ -226,3 +226,9 @@ nav ul li a:hover::after {
 nav ul li a.active::after {
   width: 100%;
 }
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  /* You can also set padding-left: 20px; padding-right: 20px; uniformly if needed */
+}
