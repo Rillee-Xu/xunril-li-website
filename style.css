@@ -232,3 +232,55 @@ main p {
     padding-top: 10px;
   }
 }
+
+.dropdown {
+  margin-bottom: 20px;
+}
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #aaa;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.dropdown-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.dropdown-sign {
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: #555;
+}
+
+/* Transition section */
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.3s ease;
+}
+
+.dropdown-content.open {
+  max-height: 2000px; /* Large enough for all content */
+  opacity: 1;
+  padding: 10px 0;
+}
+
+.dropdown-content ul {
+  max-width: 100%;
+}
+
+.dropdown-content ul li {
+  margin-bottom: 20px;
+  word-break: break-word;
+}
+
+.dropdown-content ul li:last-child {
+  margin-bottom: 0;
+}
