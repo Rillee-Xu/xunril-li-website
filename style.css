@@ -178,3 +178,7 @@ main p {
     padding-top: 10px;
   }
 }
+
+.container {
+  outline: 2px dashed red; /* TEMP: helps you see exact size and alignment */
+}
