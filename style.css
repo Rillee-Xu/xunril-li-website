@@ -200,3 +200,27 @@ main p {
     padding-top: 10px;
   }
 }
+
+.dropdown {
+  margin-bottom: 20px;
+}
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #aaa;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.dropdown-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.dropdown-sign {
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: #555;
+}
