@@ -26,7 +26,6 @@ body {
   margin-right: auto;
   padding: 20px;
   overflow-x: hidden;
-  outline: 2px dashed red; /* TEMP: helps you see exact size and alignment */
 }
 
 /* Header */
