@@ -232,3 +232,13 @@ main p {
     padding-top: 10px;
   }
 }
+
+/* Page fade-in animation */
+body {
+  opacity: 0;
+  transition: opacity 0.6s ease-in;
+}
+
+body.fade-in {
+  opacity: 1;
+}
