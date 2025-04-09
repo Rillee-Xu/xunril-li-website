@@ -183,3 +183,19 @@
 .dropdown-content ul li:last-child {
   margin-bottom: 0; /* Remove margin on the last item to avoid extra space at the end */
 }
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 600px) {
+  .intro {
+    flex-direction: column;  /* Stack image and text vertically */
+    align-items: center;
+    text-align: center;
+  }
+  .profile-pic {
+    width: 80%;       /* Adjust width; this will make it responsive */
+    max-width: 300px; /* Ensure it doesn't get too large on larger screens */
+  }
+  .intro-text {
+    padding-top: 10px; /* Some space between the image and text */
+  }
+}
