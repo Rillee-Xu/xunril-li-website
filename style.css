@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+/* Force consistent vertical scrollbar to prevent layout shift */
+html {
+  overflow-y: scroll;
+}
+
 /* Body styling */
 body {
   font-family: Arial, sans-serif;
