@@ -5,8 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Xun Ril Li - Bio</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    body {
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    body.fade-in {
+      opacity: 1;
+    }
+
+    body.fade-out {
+      opacity: 0;
+    }
+  </style>
 </head>
 <body>
   <!-- Header -->
@@ -28,26 +42,13 @@
   <main class="container">
     <article class="bio-content">
       <h2>Bio</h2>
-      <p>
-        <strong>Xun Ril Li</strong> (she/her) is a doctoral candidate in Adult Education and Community Development at the Ontario Institute for Studies in Education, University of Toronto, and also pursues a collaborative specialization in Women’s and Gender Studies. Grounded in decolonial and feminist theories, her work explores how marginalized communities negotiate borders, queerness, gender, and citizenship—particularly within diasporic and digital spaces. Her doctoral project centers on Chinese lesbians’ cultural production on social media platforms.
-      </p>
-      <p>
-        Before beginning her doctoral journey, Ril served in refugee and newcomer services, offering wraparound support to government-assisted immigrants, coordinating skill-building workshops, and advocating for LGBT-inclusive settlement practices. She also designed specialized language and digital literacy curricula, recognizing the transformative power of accessible learning. These experiences deepened her commitment to an equity-focused praxis—attuned to the complex socio-political realities shaping marginalized lives—which guides her current research endeavors.
-      </p>
-      <p>
-        In addition to her academic work, Ril engages in knowledge mobilization through teacher workshops, guest lectures, and talks, and maintains a creative Instagram account featuring a political comic series titled <em>Just This Toast</em>.
-      </p>
-      <p>
-        <strong>李珣（Ril）</strong>是多倫多大學安大略教育研究院（Ontario Institute for Studies in Education, University of Toronto）成人教育與社區發展博士候選人，同時亦修讀多倫多大學的女性與性別研究協作專項。她的研究植根於去殖民及女性主義理論，探討邊緣化社群如何在離散與數碼空間中協商邊界、酷兒身份、性別及公民權，其博士研究專案聚焦華人女同性戀於社交媒體平台上的文化生產.
-      </p>
-      <p>
-        在展開博士旅程之前，Ril曾於難民及新移民服務領域提供全方位支援，策劃技能培訓工作坊，並倡導更具同志包容度的安置服務。她亦設計專門的語言及數碼資訊學習課程，深切體會到包容學習的力量。這些經驗加強了她以平等為核心的研究實踐，洞察影響邊緣群體的複雜社會與政治脈絡，並持續指引她現在的研究方向.
-      </p>
-      <p>
-        除學術研究外，Ril亦透過教師工作坊、客席講座及演講進行知識交流，並在 Instagram 維護名為《Just This Toast》的創意帳號，發佈政治漫畫作品.
-      </p>
+      <p><strong>Xun Ril Li</strong> (she/her) is a doctoral candidate in Adult Education and Community Development at the Ontario Institute for Studies in Education, University of Toronto, and also pursues a collaborative specialization in Women’s and Gender Studies. Grounded in decolonial and feminist theories, her work explores how marginalized communities negotiate borders, queerness, gender, and citizenship—particularly within diasporic and digital spaces. Her doctoral project centers on Chinese lesbians’ cultural production on social media platforms.</p>
+      <p>Before beginning her doctoral journey, Ril served in refugee and newcomer services, offering wraparound support to government-assisted immigrants, coordinating skill-building workshops, and advocating for LGBT-inclusive settlement practices. She also designed specialized language and digital literacy curricula, recognizing the transformative power of accessible learning. These experiences deepened her commitment to an equity-focused praxis—attuned to the complex socio-political realities shaping marginalized lives—which guides her current research endeavors.</p>
+      <p>In addition to her academic work, Ril engages in knowledge mobilization through teacher workshops, guest lectures, and talks, and maintains a creative Instagram account featuring a political comic series titled <em>Just This Toast</em>.</p>
+      <p><strong>李珣（Ril）</strong>是多倫多大學安大略教育研究院（Ontario Institute for Studies in Education, University of Toronto）成人教育與社區發展博士候選人，同時亦修讀多倫多大學的女性與性別研究協作專項。她的研究植根於去殖民及女性主義理論，探討邊緣化社群如何在離散與數碼空間中協商邊界、酷兒身份、性別及公民權，其博士研究專案聚焦華人女同性戀於社交媒體平台上的文化生產.</p>
+      <p>在展開博士旅程之前，Ril曾於難民及新移民服務領域提供全方位支援，策劃技能培訓工作坊，並倡導更具同志包容度的安置服務。她亦設計專門的語言及數碼資訊學習課程，深切體會到包容學習的力量。這些經驗加強了她以平等為核心的研究實踐，洞察影響邊緣群體的複雜社會與政治脈絡，並持續指引她現在的研究方向.</p>
+      <p>除學術研究外，Ril亦透過教師工作坊、客席講座及演講進行知識交流，並在 Instagram 維護名為《Just This Toast》的創意帳號，發佈政治漫畫作品.</p>
 
-      <!-- Link to download the CV -->
       <div class="cv-container">
         <a href="Xun-Ril-Li-CV.pdf" class="cv-button" download="Xun_Ril_Li_CV.pdf">Download My CV</a>
       </div>
@@ -60,24 +61,34 @@
       <p class="footer-name">Xun Ril Li 李珣</p>
       <p class="footer-sub">researcher | educator | lifelong learner</p>
       <div class="social-icons">
-        <a href="https://orcid.org/0009-0003-3100-555X" target="_blank" title="ORCID"><i class="fab fa-orcid"></i></a>
-        <a href="https://www.linkedin.com/in/rilxunli" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/its_justthistoast/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://orcid.org/0009-0003-3100-555X" target="_blank"><i class="fab fa-orcid"></i></a>
+        <a href="https://www.linkedin.com/in/rilxunli" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/its_justthistoast/" target="_blank"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
   </footer>
 
-  <!-- Scripts -->
+  <!-- JS for fade-in and fade-out -->
   <script>
-    // Fade-in effect on page load
     document.addEventListener("DOMContentLoaded", function () {
       document.body.classList.add("fade-in");
     });
 
-    // Smooth scroll to top before leaving the page
-    window.onbeforeunload = () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
+    document.querySelectorAll('a').forEach(link => {
+      if (link.hostname === window.location.hostname) {
+        link.addEventListener('click', function (e) {
+          const target = link.getAttribute('href');
+          if (target && !target.startsWith('#') && !link.hasAttribute('download')) {
+            e.preventDefault();
+            document.body.classList.remove("fade-in");
+            document.body.classList.add("fade-out");
+            setTimeout(() => {
+              window.location.href = target;
+            }, 300);
+          }
+        });
+      }
+    });
   </script>
 </body>
 </html>
