@@ -112,14 +112,17 @@
   </footer>
 
   <!-- Dropdown toggle script -->
-  <script>
+<script>
   document.querySelectorAll('.dropdown-header').forEach(header => {
     header.addEventListener('click', () => {
       const content = header.nextElementSibling;
       const sign = header.querySelector('.dropdown-sign');
 
+      // Toggle the 'open' class
       content.classList.toggle('open');
-      sign.textContent = content.classList.contains('open') ? "–" : "+";
+
+      // Update the plus/minus sign
+      sign.textContent = content.classList.contains('open') ? '–' : '+';
     });
   });
 </script>
