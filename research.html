@@ -113,15 +113,15 @@
 
   <!-- Dropdown toggle script -->
   <script>
-    document.querySelectorAll('.dropdown-header').forEach(header => {
-      header.addEventListener('click', () => {
-        const content = header.nextElementSibling;
-        const sign = header.querySelector('.dropdown-sign');
-        const isOpen = content.style.display === "block";
-        content.style.display = isOpen ? "none" : "block";
-        sign.textContent = isOpen ? "+" : "–";
-      });
+  document.querySelectorAll('.dropdown-header').forEach(header => {
+    header.addEventListener('click', () => {
+      const content = header.nextElementSibling;
+      const sign = header.querySelector('.dropdown-sign');
+
+      content.classList.toggle('open');
+      sign.textContent = content.classList.contains('open') ? "–" : "+";
     });
-  </script>
+  });
+</script>
 </body>
 </html>
