@@ -8,24 +8,19 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    document.body.classList.add("fade-in");
-  });
-</script>
 <body>
-  <!-- Header (same on all pages) -->
+  <!-- Header -->
   <header>
     <div class="container">
       <h1 class="site-title">Xun Ril Li</h1>
-<nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="bio.html" class="active">Bio</a></li>
-    <li><a href="research.html">Research</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="bio.html" class="active">Bio</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
@@ -51,6 +46,7 @@
       <p>
         除學術研究外，Ril亦透過教師工作坊、客席講座及演講進行知識交流，並在 Instagram 維護名為《Just This Toast》的創意帳號，發佈政治漫畫作品.
       </p>
+
       <!-- Link to download the CV -->
       <div class="cv-container">
         <a href="Xun-Ril-Li-CV.pdf" class="cv-button" download="Xun_Ril_Li_CV.pdf">Download My CV</a>
@@ -70,5 +66,18 @@
       </div>
     </div>
   </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Fade-in effect on page load
+    document.addEventListener("DOMContentLoaded", function () {
+      document.body.classList.add("fade-in");
+    });
+
+    // Smooth scroll to top before leaving the page
+    window.onbeforeunload = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
 </body>
 </html>
